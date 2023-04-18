@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    // 부정 연산자 ! Denial Operator
+    // ! 자체로 부정을 뜻함. 보통 != 형태로 많이 쓰임. 같지 않다는 뜻.
+    console.log('1 != 2 :', 1 != 2);         // true
+    console.log('1 != 1 :', 1 != 1);       // false
+
+    // !== 으로도 쓰임. 정확하게 같지 않다는 뜻. ===의 부정 버전인듯?
+    console.log('1 !== 2 :', 1 !== 2);         // true
+    console.log('1 !== 1 :', 1 !== 1);       // false
+
+
+    // undefined : 정의되지 않은
+    var a;
+    console.log("a :", a);
+
+    // 개발자가 의도한 undefined
+    var b = null;
+    console.log('a :', a);
+
+    // ▼ 결과값 true. 둘 다 결과적으로 undefined 이므로.
+    console.log("a == b :", a == b);
+
+    // ▼ 결과값 false. b는 의도된 undefined 임. 그래서 a랑은 정확하게 일치하지 않는다.
+    // a는 undefined 타입. b는 null 타입인 것.
+    console.log("a === b :", a === b);
+
+    // true는 1과 동일함
+    console.log("true == 1 :", true == 1);
+    console.log("true == 2 :", true == 2);
+
+    // 그러나 일치 연산자를 쓰면 다른 것으로 나옴
+    console.log("true === 1 :", true === 1);
+
+    // 0 과 -0은 true
+    console.log(" 0 === -0 :", 0 === -0);
+
+    // NaN도 null, undefined 처럼 하나의 데이터 타입임.
+    // 계산을 할 수 없다는 뜻이기 때문에, false 임.
+    console.log("NaN === NaN :", NaN === NaN);
+</script>
+</body>
+</html>
